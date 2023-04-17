@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Blue Light Filter</title>
+    <style>
+      body {
+        width: 200px;
+        height: 150px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #slider {
+        width: 80%;
+        background: #181747;;
+      }
+      #preview {
+        margin-top: 10px;
+        width: 80%;
+        height: 50px;
+        border: 1px solid gray;
+        color: #181747;
+      }
+      p {
+        justify-content: center;
+        text-align: center;
+      }
+      img {
+        max-width: 50%;
+  max-height: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="logo.png" alt="My Image">
+    <input type="range" min="0" max="100" value="0" id="slider">
+    <p>The <storng>#1</storng> blue-light filter<br> for your browser</p>
+    <script src="popup.js"></script>
+  </body>
+</html>
